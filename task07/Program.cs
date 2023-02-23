@@ -14,5 +14,5 @@ if (number >= 100 && number <= 999)
 int lastNumber = number % 10;
 
 Console.WriteLine($"Последняя цифра -> {lastNumber}");
-}
+} 
 

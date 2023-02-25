@@ -12,7 +12,7 @@ if(number > 0)
     while(count <= number)
     {
         Console.Write(count + " ");
-        count = count + 1;
+        count++;
     }
 }
 else

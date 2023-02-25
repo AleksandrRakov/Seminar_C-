@@ -3,7 +3,7 @@
 // 3 -> Среда
 // 5 -> Пятница
 // 20 мин
-int number;
+ int number;
 Console.WriteLine("Введите номер дня недели");
 number = Convert.ToInt32(Console.ReadLine());
 
@@ -16,9 +16,4 @@ else if(number == 6) Console.WriteLine("суббота");
 else if(number == 7) Console.WriteLine("воскресенье");
  
  else Console.WriteLine("неверное число");
-
-
-
-
-
 

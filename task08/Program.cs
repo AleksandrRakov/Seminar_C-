@@ -6,17 +6,18 @@
 // 8 -> 2, 4, 6, 8
 
 Console.WriteLine("Введите число:");
- int N = Convert.ToInt32(Console.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine());
 int A = N;
 int index = 1;
-while (index< A)
+while (index < A)
 {
-if
+    if
 
- (N % 2 == 0)
- {
-Console.WriteLine("Четные числа");
-Console.WriteLine(N);}
+     (N % 2 == 0)
+    {
+        Console.WriteLine(N);
+    }
 
-N=N-1;
-index++;}
+    N = N - 1;
+    index++;
+}

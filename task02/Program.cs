@@ -7,13 +7,13 @@
 // a = -9 b = -3 -> max = -3
 
 Console.WriteLine("Введите число 1:");
- int a = Convert.ToInt32(Console.ReadLine());
+int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число 2:");
- int b = Convert.ToInt32(Console.ReadLine());
-   Console.WriteLine("Максимальное число:"); 
-    if (a > b) Console.WriteLine(a);
-    if (b > a) Console.WriteLine(b);
+int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Максимальное число:");
+if (a > b) Console.WriteLine(a);
+else if (b > a) Console.WriteLine(b);
 
- 
-    
- 
+
+
+

@@ -7,9 +7,8 @@
 // 7 -> нет
 
 Console.WriteLine("Введите число:");
- int x = Convert.ToInt32(Console.ReadLine());
- 
- if  (x % 2 == 0)Console.Write("является четным");
- else 
+int x = Convert.ToInt32(Console.ReadLine());
+
+if (x % 2 == 0) Console.Write("является четным");
+else
     Console.Write("Не является четным");
-    

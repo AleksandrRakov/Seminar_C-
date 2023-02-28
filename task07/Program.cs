@@ -9,7 +9,8 @@ Console.WriteLine("Введите трех значное число:");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number < 0) 
 number = -number;
-if (number >= 100 && number <= 999)
+if (number >= 100 && number <= 999) 
+
 {
 int lastNumber = number % 10;
 

@@ -8,10 +8,9 @@
 Console.WriteLine("Введите число ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(FinalNumber(number)  ? "Да" : "Нет");
+Console.WriteLine(FinalNumber(number) ? "да" : "нет");
 
 bool FinalNumber(int num)
-{ 
+{
     return num % 7 == 0 && num % 23 == 0;
-    
 }

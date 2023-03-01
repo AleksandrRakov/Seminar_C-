@@ -5,7 +5,7 @@
 // 782 -> 2
 // 918 -> 8
 
-Console.WriteLine("Введите трех значное число:");
+Console.WriteLine("Введите трехзначное число:");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number < 0) 
 number = -number;

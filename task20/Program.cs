@@ -18,6 +18,7 @@ int numberX2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите координаты Y второй точки");
 int numberY2 = Convert.ToInt32(Console.ReadLine());
 
+
 double Distance(int xOne, int yOne, int xTwo, int yTwo)
 {
     int x = xOne - xTwo;

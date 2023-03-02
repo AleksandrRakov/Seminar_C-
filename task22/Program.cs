@@ -15,8 +15,8 @@ void TableSquare(int num)
     int result = 0;
     while (index <= num)
     {
-        result = index * index * index;
-        Console.WriteLine($"{index,5} ->  {result,5}");
+        result = index * index;
+        Console.WriteLine($"{index,5}   {result,5}");
         index++;
     }
 }

@@ -9,10 +9,10 @@
 int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] arr = new int[size];
-    Random rmd = new Random();
+    Random rnd = new Random();
     for (int i = 0; i < size; i++)
     {
-        arr[i] = rmd.Next(min, max + 1);
+        arr[i] = rnd.Next(min, max + 1);
     }
     return arr;
 }

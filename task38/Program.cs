@@ -22,11 +22,28 @@ void PrintArray(double[] arr)
     Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i < arr.Length - 1) Console.Write($"{arr[i]}. ");
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}; ");
         else Console.Write($"{arr[i]}");
     }
-    Console.WriteLine("]");
+    Console.Write("]");
 }
 
+double SelectionSort(double[] arr)
+{
+    double min = arr[0];
+    double max = arr[0];
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (min > arr[i]) min = arr[i];
+        if (max < arr[i]) max = arr[i];
+    }
+    double result = max - min;
+    result = Math.Round(result, 1);
+    return result;
+}
+
+
 double[] array = CreateArrayRndDouble(10, 10, 100);
- PrintArray(array);
+PrintArray(array);
+double result = SelectionSort(array);
+ Console.WriteLine($" -> {result}");

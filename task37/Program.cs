@@ -30,20 +30,16 @@ void PrintArray(int[] arr)
 int[] CompositOfNumbers(int[] arr)
 {
 
-    int indexMax = arr.Length - 1;
-    int indexMin = 0;
-    int SizeArr = indexMax / 2 + 1 ;
+    int size = arr.Length;
+    int SizeArr = size % 2 == 0 ? size / 2 : size / 2 + 1;
     int[] array = new int[SizeArr];
-    for (int i = 0; i < indexMax; i++)
+    for (int i = 0; i < SizeArr; i++)
     {
-        array[i] = arr[indexMax] * arr[indexMin];
-        indexMax--;
-        indexMin++;
+        array[i] = arr[size - i - 1] * arr[i];
     }
+    if (size % 2 != 0) array[SizeArr - 1] = arr[size / 2];
     return array;
 }
-
-
 
 int[] array = CreateArrayRndInt(11, 0, 10);
 PrintArray(array);

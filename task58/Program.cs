@@ -38,12 +38,12 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-// bool MatrixСomparison(int[,] matrix1, int[,] matrix2)
-// {
-//     if (matrix1.GetLength(1) == matrix2.GetLength(0)) return true;
+bool MatrixСomparison(int[,] matrix1, int[,] matrix2)
+{
+    if (matrix1.GetLength(1) == matrix2.GetLength(0)) return true;
 
-//     else return false;
-// }
+    else return false;
+}
 
 int[,] MultiplicationtOfTwoMatrices(int[,] matrix1, int[,] matrix2)
 {
@@ -65,7 +65,7 @@ int[,] MultiplicationtOfTwoMatrices(int[,] matrix1, int[,] matrix2)
 }
 
 
-int[,] matrix1 = CreateMatrixRndInt(2, 2, 0, 10);
+int[,] matrix1 = CreateMatrixRndInt(3, 2, 0, 10);
 int[,] matrix2 = CreateMatrixRndInt(2, 2, 0, 10);
 
 Console.WriteLine("Матрица 1 :");
@@ -76,12 +76,10 @@ Console.WriteLine();
 Console.WriteLine("Матрица 2 :");
 PrintMatrix(matrix2);
 
-Console.WriteLine();
-
-int[,] multiplicationtOfTwoMatrices = MultiplicationtOfTwoMatrices(matrix1, matrix2);
-
-if (matrix1.GetLength(1) == matrix2.GetLength(0))
+if (MatrixСomparison(matrix1, matrix2))
 {
+    int[,] multiplicationtOfTwoMatrices = MultiplicationtOfTwoMatrices(matrix1, matrix2);
+    Console.WriteLine();
     Console.WriteLine("Результирующая матрица : ");
     Console.WriteLine();
     PrintMatrix(multiplicationtOfTwoMatrices);

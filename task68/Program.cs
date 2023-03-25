@@ -17,5 +17,5 @@ Console.WriteLine("Введите натуральное число M");
 int numberM = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите натуральное число N");
 int numberN = Convert.ToInt32(Console.ReadLine());
-int ackermanFunctions = AckermanFunctions(number, number1);
+int ackermanFunctions = AckermanFunctions(numberM, numberN);
 Console.WriteLine($"-> A(m,n) = {ackermanFunctions}");

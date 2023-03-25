@@ -7,6 +7,7 @@
 
 int SumNumbers(int numM, int numN)
 {
+    if (numM > numN) return numM + SumNumbers(numM - 1, numN);
     if (numM == numN) return numM;
     else return numN + SumNumbers(numM, numN - 1);
 }
